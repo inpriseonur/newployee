@@ -1,10 +1,10 @@
 project_name,Departmant,job_title,start_date,end_date,estimation_end_date,feedback,manager,project_owner,progress,statu
-Onur Cinemre,IT,Project Manager,10.11.2023,25.11.2023,22.11.2023,"4,50",Mustafa Kamil,Kamil,100,done
-Ahmet Yakup,Finance,Sales Manager,12.11.2023,30.11.2023,26.11.2023,"3,6",Derman Bulut,Sercan,100,done
-Nil Geç,IK,HR Specials,10.09.2023,05.11.2023,20.10.2023,"3,14",Ayşe Dert,Kamil,100,done
-Hande Su,IT,Developer,21.12.2023,08.01.2024,12.01.2024,"4,38",Ayşe Dert,Sercan,100,done
-Mustafa Yılmaz,IT,Developer,21.12.2023,12.01.2024,12.01.2024,"4,07",Derman Bulut,Sercan,100,done
-Akif Gül,Finance,Sales Manager,4.7.2023,30.07.2023,06.08.2023,5,Ayşe Dert,Kamil,100,done
+Onur Cinemre,IT,Project Manager,10.11.2023,25.11.2023,22.11.2023,4.5,Mustafa Kamil,Kamil,100,done
+Ahmet Yakup,Finance,Sales Manager,12.11.2023,30.11.2023,26.11.2023,3.6,Derman Bulut,Sercan,100,done
+Nil Geç,IK,HR Specials,10.09.2023,05.11.2023,20.10.2023,3.1,Ayşe Dert,Kamil,100,done
+Hande Su,IT,Developer,21.12.2023,08.01.2024,12.01.2024,2.1,Ayşe Dert,Sercan,100,done
+Mustafa Yılmaz,IT,Developer,21.12.2023,12.01.2024,12.01.2024,4.1,Derman Bulut,Sercan,100,done
+Akif Gül,Finance,Sales Manager,4.7.2023,30.07.2023,06.08.2023,2.9,Ayşe Dert,Kamil,100,done
 Yener Akbül,IT,Database Admin,21.12.2023,,06.08.2023,,Ayşe Dert,Sercan,45,
 Caner Erkin,Finance,Accounter,21.12.2023,,06.08.2023,,Derman Bulut,Sercan,64,
 Tanju Gol,Finance,Sales Manager,4.7.2023,,06.08.2023,,Ayşe Dert,Kamil,78,

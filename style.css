@@ -15,3 +15,17 @@ div[data-testid="stExpander"] div[role="button"] p
     font-size: 1.3rem;
     color:rgb(235, 238, 238);
 }
+
+.st-cp {
+    background-color: rgb(75 174 255);
+}
+
+.css-1544g2n {
+    padding: 1rem 1rem 1rem;
+}
+
+.stSelectbox {
+    width: 304px;
+    background-color: #90abe5;
+    padding: 10px;
+}
