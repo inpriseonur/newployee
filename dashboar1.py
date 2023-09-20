@@ -23,16 +23,20 @@ def load_Data():
     
     return df
 
-
-
 def create_sidebar():
     df = load_Data()
     st.set_page_config(page_title="Dashboard",page_icon="🌍",layout="wide")
     st.sidebar.image("logo.jpg",caption="Developed and Maintaned by: Onur Cinemre")
     selected_box = st.sidebar.multiselect('Select one or multiple departmans',df['Departmant'].unique(),df['Departmant'].unique().tolist())
     df = df[df["Departmant"].isin(selected_box)]
-    selected_owner = st.sidebar.selectbox('Seç departman', df['Job Title'].unique())
-    df = df[df['Job Title'] == selected_owner]
+    selected_job_title = st.sidebar.multiselect('Select one or multiple Job Title',df['Job Title'].unique(),df['Job Title'].unique().tolist())
+    df = df[df['Job Title'].isin(selected_job_title)]
+ 
+    selected_manager = st.sidebar.multiselect('Select one or multiple Manager',df['Manager'].unique(),df['Manager'].unique().tolist())
+    df = df[df['Manager'].isin(selected_manager)]
+    selected_owner = st.sidebar.multiselect('Select one or multiple Project Owner',df['Project Owner'].unique(),df['Project Owner'].unique().tolist())
+    df = df[df['Project Owner'].isin(selected_owner)]
+
     return df
  
 
@@ -62,13 +66,6 @@ def create_metrics(df):
     
 df = create_sidebar()
 create_metrics(df)
-
-
-
-
-
-
-
 
 st.data_editor(df, column_config={
 'Progress': st.column_config.ProgressColumn(
