@@ -23,9 +23,9 @@ def load_Data():
     df = pd.read_csv('OT.csv')
     df.columns = ['Project Name', 'Departmant', 'Job Title', 'Start Date', 'End Date', 'Estimation Date', 'Feedback', 'Manager', 'Project Owner',
     'Progress', 'Status']
-    df['Start Date'] = pd.to_datetime(df['Start Date'], format='mixed')
-    df['End Date'] = pd.to_datetime(df['End Date'], format='mixed')
-    df['Estimation Date'] = pd.to_datetime(df['Estimation Date'], format='mixed')
+    df['Start Date'] = pd.to_datetime(df['Start Date'])
+    df['End Date'] = pd.to_datetime(df['End Date'])
+    df['Estimation Date'] = pd.to_datetime(df['Estimation Date'])
     df['Status'].fillna('InProgress', inplace = True) #Status kolonu boş olan satırlar için bu kolona inprogress yazdırıyorum
     return df
 
@@ -109,9 +109,9 @@ def load_Data_OnboardingDetail():
     df_detail.columns = ['Project Type', 'Project Name', 'Project Departmant', 'Project Owner', 'Task Name',
                          'Task Assignee', 'Task Type', 'Created Date', 'Assignee Date', 'Completed Date',
                          'Duration', 'Task Departmant', 'Job Title', 'Estimated Duration', 'Reminder']
-    df_detail['Created Date'] = pd.to_datetime(df_detail['Created Date'], format='mixed')
-    df_detail['Assignee Date'] = pd.to_datetime(df_detail['Assignee Date'], format='mixed')
-    df_detail['Completed Date'] = pd.to_datetime(df_detail['Completed Date'], format='mixed')
+    df_detail['Created Date'] = pd.to_datetime(df_detail['Created Date'])
+    df_detail['Assignee Date'] = pd.to_datetime(df_detail['Assignee Date'])
+    df_detail['Completed Date'] = pd.to_datetime(df_detail['Completed Date'])
     df_detail['Project Type'] = 'Onboarding'
     df_detail['Fark'] = df_detail['Completed Date'] - df_detail['Assignee Date']
     create_SelectboxesForDetail(df_detail)
